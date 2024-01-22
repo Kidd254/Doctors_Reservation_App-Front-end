@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import { createUser } from '../../redux/usersSlice';
+import { createUser } from '../../redux/reducers/userSlice.js';
 import logo from '../../assets/logoTwo.png';
 import './style.css'
 
