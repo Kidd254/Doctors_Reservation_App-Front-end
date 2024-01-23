@@ -28,7 +28,7 @@ const Login = () => {
         const action = await dispatch(loginUser(userData));
         if (loginUser.fulfilled.match(action)) {
           localStorage.setItem('email', formData.email);
-          navigate('/');
+          navigate('/home');
         } else if (loginUser.rejected.match(action)) {
           setError(action.error.message);
         }
@@ -99,7 +99,7 @@ const Login = () => {
         </form>
         <p className="text-center">
           Do Not have an account?{' '}
-          <Link to="/" className="text-lime-500 font-semibold">
+          <Link to="/login" className="text-lime-500 font-semibold">
             <b>Sign Up</b>
           </Link>
         </p>
