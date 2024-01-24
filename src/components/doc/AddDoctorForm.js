@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import doctorRequests from '../../services/doctorsRequests';
+import doctorRequests from '../../requests/doctorRequests';
 import MessageDialog from './MessageDialog'; 
 import Select from 'react-select'; 
 import makeAnimated from 'react-select/animated';

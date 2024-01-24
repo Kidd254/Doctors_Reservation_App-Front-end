@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import DoctorCard from './DoctorCard';
 import Slider from 'react-slick';
 import './DoctorList.css';
-import { fetchDoctors } from '../../redux/doctors/doctorsSlice';
+import { fetchDoctors } from '../../redux/reducers/doctorsSlice';
 
 const DoctorList=() =>{
   const dispatch = useDispatch();

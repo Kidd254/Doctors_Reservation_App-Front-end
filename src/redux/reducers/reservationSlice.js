@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import reservationRequests from '../../services/reservationRequests';
+import reservationRequests from '../../requests/reservationRequests';
 
 const initialState = {
   loading: false,

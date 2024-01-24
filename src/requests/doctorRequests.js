@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
-const doctorsService = {};
+const doctorRequests = {};
 
 doctorRequests.fetchDoctors = function () {
   return axios
@@ -23,7 +23,7 @@ doctorRequests.fetchDoctors = function () {
 
 // Doctor delete
 
-doctorsService.deleteDoctor = function (doctorId) {
+doctorRequests.deleteDoctor = function (doctorId) {
   return axios
     .delete(`${API_BASE_URL}/doctors/${doctorId}`)
     .then((response) => {
@@ -38,7 +38,7 @@ doctorsService.deleteDoctor = function (doctorId) {
 
 // Doctor add
 
-doctorsService.addDoctor = function (doctorData) {
+doctorRequests.addDoctor = function (doctorData) {
  
   return axios.post(`${API_BASE_URL}/doctors`, doctorData)
   .then(response => {
