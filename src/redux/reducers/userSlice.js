@@ -9,6 +9,15 @@ const initialState = {
     email: null
 }
 
+export const searchByEmail = createAsyncThunk('users/searchByEmail', async (email, { rejectWithValue }) => {
+  try {
+    const response = await userRequests.searchByEmail(email);
+    return response.data;
+  } catch (error) {
+    return rejectWithValue(error);
+  }
+});
+
 export const createUser = createAsyncThunk(
     'users/createUser',
     async (userData, {rejectWithValue}) => {
