@@ -99,7 +99,7 @@ const Register = () => {
         'Registration successful. Redirecting to Sign In page...'
       );
       setTimeout(() => {
-        navigate('/');
+        navigate('/login');
       }, 2000);
     } else if (createUser.rejected.match(action)) {
       setError('Sign-up failed: ' + action.error.message);
