@@ -5,7 +5,7 @@ import reservationReducer from './reducers/reservationSlice';
 
 const store = configureStore({
     reducer: {
-        user: userReducer,
+        users: userReducer,
         doctors: doctorsReducer,
         reservation: reservationReducer,
     },

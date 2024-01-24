@@ -90,7 +90,7 @@ const Sidebar = () => {
     dispatch(logoutUser())
       .then(() => {
         setTimeout(() =>{
-          navigate('/signin');
+          navigate('/login');
           window.location.reload();
         }, 10)
       })
