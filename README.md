@@ -87,7 +87,7 @@ Before you proceed, ensure that you have the following installed on your machine
 Clone this repository to your desired folder:
 
 ```sh
-  git clone git@github.com:mohashyne/24hour_doctor-front_end.git
+  git clone https://github.com/Kidd254/Doctors_Reservation_App-Front-end.git
 ```
 
 ### Install
